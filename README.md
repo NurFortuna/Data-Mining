@@ -1,4 +1,4 @@
-## **Support Vector Machine(SVM)** ##
+## **Support Vector Machine(SVM) :star2:** ## 
 
 SVM is a powerful supervised algorithm that works best on smaller datasets but on complex ones. Support
 Vector Machine, abbreviated as SVM can be used for both **regression** and **classification** tasks, but
@@ -9,7 +9,7 @@ It is a supervised machine learning problem where we try to find a hyperplane th
 **Note**: Don’t get confused between SVM and logistic regression. Both the algorithms try to find the best hyperplane, but the
 main difference is logistic regression is a probabilistic approach whereas support vector machine is based on statistical approaches.
 
-### Types of Support Vector Machine ###
+### Types of Support Vector Machine :white_heart: ###
 
 #### Linear SVM ####
 When the data is perfectly linearly separable only then we can use Linear SVM. Perfectly linearly
@@ -25,7 +25,7 @@ In most real-world applications we do not find linearly separable datapoints hen
 **Margin:** it is the distance between the hyperplane and the observations closest to the hyperplane (support vectors). In SVM large margin is considered a good margin. 
 There are two types of margins hard margin and soft margin. 
 
-resim gelecek
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/1.PNG)
 
 #### How does Support Vector Machine work? ####
 
@@ -33,6 +33,8 @@ SVM is defined such that it is defined in terms of the support vectors only, we 
 other observations since the margin is made using the points which are closest to the hyperplane (support
 vectors), whereas in logistic regression the classifier is defined over all the points. Hence SVM enjoys
 some natural speed-ups.
+
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/2.PNG)
 
 The best hyperplane is that plane that has the maximum distance from both the classes, and this is the main aim of SVM. 
 This is done by finding different hyperplanes which classify the labels in 
@@ -43,6 +45,8 @@ the best way then it will choose the one which is farthest from the data points 
 ##### Dot-Product #####
 The dot product can be defined as the projection of one vector along with another, multiply by the product of another vector.
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/3.PNG)
+
 Here a and b are 2 vectors, to find the dot product between these 2 vectors we first find the magnitude of both the vectors 
 and to find magnitude we use the Pythagorean theorem or the distance formula.
 
@@ -51,6 +55,9 @@ and to find magnitude we use the Pythagorean theorem or the distance formula.
 To find this first we assume this point is a vector (X) and then we make a vector (w) which is perpendicular
 to the hyperplane. Let’s say the distance of vector w from origin to decision boundary is ‘c’. Now we take
 the projection of X vector on w.
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/4.PNG)
+
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/5.PNG)
 
 We already know that projection of any vector or another vector is called dot-product. Hence, we take the
 dot product of x and w vectors. If the dot product is greater than ‘c’ then we can say that the point lies on the right side. If the dot product is less than ‘c’ then the point is on the left side and if the dot product is
@@ -61,11 +68,14 @@ equal to ‘c’ then the point lies on the decision boundary.
 The most interesting feature of SVM is that it can even work with a non-linear dataset and for this, 
 we use “Kernel Trick” which makes it easier to classifies the points. Suppose we have a dataset like this:
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/8.PNG)
+
 Here we see we cannot draw a single line or say hyperplane which can classify the points correctly. So
 what we do is try converting this lower dimension space to a higher dimension space using some quadratic
 functions which will allow us to find a decision boundary that clearly divides the data points. These
 functions which help us do this are called Kernels and which kernel to use is purely determined by
 hyperparameter tuning.
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/9.PNG)
 
 #### Different Kernel functions ####
 
@@ -75,15 +85,20 @@ Some kernel functions which you can use in SVM are given below:
 
 Following is the formula for the polynomial kernel:
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/poli.PNG)
 
 Here d is the degree of the polynomial, which we need to specify manually.
 
 Suppose we have two features X1 and X2 and output variable as Y, so using polynomial kernel we can
 write it as:
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/poli2.PNG)
+
 ##### 2. Sigmoid kernel #####
 
 We can use it as the proxy for neural networks. Equation is:
+
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/sigmoid.PNG)
 
 It is just taking your input, mapping them to a value of 0 and 1 so that they can be separated by a simple
 straight line.
@@ -94,6 +109,8 @@ What it actually does is to create non-linear combinations of our features to li
 feature space where we can use a linear decision boundary to separate your classes 
 It is the most used kernel in SVM classifications, the following formula explains it mathematically:
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/10.PNG)
+
 1. ‘σ’ is the variance and our hyperparameter
 2. ||X₁ – X₂|| is the Euclidean Distance between two points X₁ and X₂
 
@@ -102,7 +119,11 @@ It is the most used kernel in SVM classifications, the following formula explain
 
 It is mainly used for eliminating the cross term in mathematical functions. Following is the formula of the Bessel function kernel:
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/bessel.PNG)
+
 ##### 5. Anova Kernel #####
 
 It performs well on multidimensional regression problems. The formula for this kernel function is:
+
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/anova.PNG)
 
