@@ -1,6 +1,9 @@
 
-### 	:sparkling_heart: Table of contents	:sparkling_heart:  ###
+### 	:sparkling_heart: Table of contents	:sparkling_heart:  :hatched_chick: ### 
 1. [Clustering](#clustering)
+     1. [Types of Clustering Methods](#types-of-clustering-methods)
+     2. [Clustering Algorithms](#clustering-algorithms)
+     3. [Applications of Clustering](#applications-of-clustering)
 2. [Support Vector Machine](#support-vector-machine)
     1. [Types of Support Vector Machine](#types-of-support-vector-machine)
     2. [How does Support Vector Machine work?](#how-does-support-vector-machine-work)
@@ -9,8 +12,7 @@
 
 
 
-## Clustering ##
-
+## Clustering ##  
 Clustering or cluster analysis is a machine learning technique, which groups the unlabelled dataset.
 
 It does it by finding some similar patterns in the unlabelled dataset such as shape, size, color, behavior, etc., 
@@ -36,7 +38,7 @@ of Clustering exist. Below are the main clustering methods used in Machine learn
 5. Fuzzy Clustering
 
 
-#### Partitioning Clustering ####
+#### Partitioning Clustering :ribbon: ####
 
 It is a type of clustering that divides the data into non-hierarchical groups.
 It is also known as the centroid-based method. The most common example of partitioning 
@@ -46,7 +48,7 @@ In this type, the dataset is divided into a set of k groups, where K is used to 
 pre-defined groups. The cluster center is created in such a way that the distance between the data
 points of one cluster is minimum as compared to another cluster centroid.
 
-#### Density-Based Clustering ####
+#### Density-Based Clustering :ribbon: ####
 
 The density-based clustering method connects the highly-dense areas into clusters, and the
 arbitrarily shaped distributions are formed as long as the dense region can be connected. This
@@ -56,7 +58,7 @@ densities into clusters. The dense areas in data space are divided from each oth
 These algorithms can face difficulty in clustering the data points if the dataset has varying
 densities and high dimensions.
 
-#### Distribution Model-Based Clustering ####
+#### Distribution Model-Based Clustering :ribbon: ####
 
 In the distribution model-based clustering method, the data is divided based on the probability
 of how a dataset belongs to a particular distribution. The grouping is done by assuming some distributions commonly Gaussian Distribution.
@@ -64,7 +66,7 @@ of how a dataset belongs to a particular distribution. The grouping is done by a
 The example of this type is the Expectation-Maximization Clustering algorithm that uses
 Gaussian Mixture Models (GMM).
 
-#### Hierarchical Clustering ####
+#### Hierarchical Clustering :ribbon: ####
 
 Hierarchical clustering can be used as an alternative for the partitioned clustering as there is no requirement of pre-specifying the number of clusters to be created. In this technique, the dataset is divided into clusters to create a tree-like structure, which is also called a dendrogram. The observations or any number of clusters can be selected by cutting the tree at the correct level. The most common example of this method is the Agglomerative Hierarchical algorithm.
 
@@ -72,27 +74,27 @@ Hierarchical clustering can be used as an alternative for the partitioned cluste
 
 Clustering algorithms that are widely used in machine learning:
 
-1. **K-Means algorithm:** The k-means algorithm is one of the most popular clustering
+1.:heavy_check_mark:  **K-Means algorithm:** The k-means algorithm is one of the most popular clustering
 algorithms. It classifies the dataset by dividing the samples into different clusters of equal
 variances. The number of clusters must be specified in this algorithm. It is fast with fewer
 computations required, with the linear complexity of O(n).
 
-2. **Mean-shift algorithm:** Mean-shift algorithm tries to find the dense areas in the smooth density of data points.
+2.:heavy_check_mark: **Mean-shift algorithm:** Mean-shift algorithm tries to find the dense areas in the smooth density of data points.
 It is an example of a centroid-based model, that works on updating the candidates for centroid to be the center of the
 points within a given region
 
-3. **DBSCAN Algorithm:** It stands for Density-Based Spatial Clustering of Applications
+3.:heavy_check_mark: **DBSCAN Algorithm:** It stands for Density-Based Spatial Clustering of Applications
 with Noise. It is an example of a density-based model similar to the mean-shift, but with
 some remarkable advantages. In this algorithm, the areas of high density are separated by
 the areas of low density. Because of this, the clusters can be found in any arbitrary shape.
 
-4.**Expectation-Maximization Clustering using GMM:** This algorithm can be used as an alternative for the 
+4.:heavy_check_mark: **Expectation-Maximization Clustering using GMM:** This algorithm can be used as an alternative for the 
 k-means algorithm or for those cases where K-means can be failed. In GMM, it is assumed that the data points are Gaussian distributed.
 
-5. **Agglomerative Hierarchical algorithm:** The Agglomerative hierarchical algorithm performs the bottom-up hierarchical clustering. 
+5.:heavy_check_mark: **Agglomerative Hierarchical algorithm:** The Agglomerative hierarchical algorithm performs the bottom-up hierarchical clustering. 
 In this, each data point is treated as a single cluster at the outset and then successively merged. The cluster hierarchy can be represented as a tree-structure.
 
-6. **Affinity Propagation:** It is different from other clustering algorithms as it does not require to specify the number of clusters.
+6.:heavy_check_mark:  **Affinity Propagation:** It is different from other clustering algorithms as it does not require to specify the number of clusters.
 In this, each data point sends a message between the pair of data points until convergence. It has O(N2T) time complexity, which is the main drawback of this algorithm.
 
 #### Applications of Clustering ####
