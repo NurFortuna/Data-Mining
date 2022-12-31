@@ -1,4 +1,121 @@
-## **Support Vector Machine(SVM) :star2:** ## 
+
+### 	:sparkling_heart: Table of contents	:sparkling_heart:  :hatched_chick: ### 
+1. [Clustering](#clustering)
+     1. [Types of Clustering Methods](#types-of-clustering-methods)
+     2. [Clustering Algorithms](#clustering-algorithms)
+     3. [Applications of Clustering](#applications-of-clustering)
+2. [Support Vector Machine](#support-vector-machine)
+    1. [Types of Support Vector Machine](#types-of-support-vector-machine)
+    2. [How does Support Vector Machine work?](#how-does-support-vector-machine-work)
+    3. [Mathematical Intuition behind Support Vector Machine](#mathematical-intuition-behind-support-vector-machine)
+    4. [Kernels in Support Vector Machine](#kernels-in-support-vector-machine)
+
+
+
+## Clustering ##  
+Clustering or cluster analysis is a machine learning technique, which groups the unlabelled dataset.
+
+It does it by finding some similar patterns in the unlabelled dataset such as shape, size, color, behavior, etc., 
+and divides them as per the presence and absence of those similar patterns.
+
+It is an **unsupervised learning** method, hence no supervision is provided to the algorithm, and it
+deals with the unlabeled dataset.
+
+After applying this clustering technique, each cluster or group is provided with a cluster-ID. 
+ML system can use this id to simplify the processing of large and complex datasets.
+
+#### Types of Clustering Methods ####
+
+The clustering methods are broadly divided into Hard clustering (datapoint belongs to only one group) and
+Soft Clustering (data points can belong to another group also). But there are also other various approaches 
+of Clustering exist. Below are the main clustering methods used in Machine learning:
+
+
+1. Partitioning Clustering
+2. Density-Based Clustering
+3. Distribution Model-Based Clustering
+4. Hierarchical Clustering
+5. Fuzzy Clustering
+
+
+#### Partitioning Clustering :ribbon: ####
+
+It is a type of clustering that divides the data into non-hierarchical groups.
+It is also known as the centroid-based method. The most common example of partitioning 
+clustering is the **KMeans Clustering algorithm.**
+
+In this type, the dataset is divided into a set of k groups, where K is used to define the number of
+pre-defined groups. The cluster center is created in such a way that the distance between the data
+points of one cluster is minimum as compared to another cluster centroid.
+
+#### Density-Based Clustering :ribbon: ####
+
+The density-based clustering method connects the highly-dense areas into clusters, and the
+arbitrarily shaped distributions are formed as long as the dense region can be connected. This
+algorithm does it by identifying different clusters in the dataset and connects the areas of high
+densities into clusters. The dense areas in data space are divided from each other by sparser areas.
+
+These algorithms can face difficulty in clustering the data points if the dataset has varying
+densities and high dimensions.
+
+#### Distribution Model-Based Clustering :ribbon: ####
+
+In the distribution model-based clustering method, the data is divided based on the probability
+of how a dataset belongs to a particular distribution. The grouping is done by assuming some distributions commonly Gaussian Distribution.
+
+The example of this type is the Expectation-Maximization Clustering algorithm that uses
+Gaussian Mixture Models (GMM).
+
+#### Hierarchical Clustering :ribbon: ####
+
+Hierarchical clustering can be used as an alternative for the partitioned clustering as there is no requirement of pre-specifying the number of clusters to be created. In this technique, the dataset is divided into clusters to create a tree-like structure, which is also called a dendrogram. The observations or any number of clusters can be selected by cutting the tree at the correct level. The most common example of this method is the Agglomerative Hierarchical algorithm.
+
+#### Clustering Algorithms ####
+
+Clustering algorithms that are widely used in machine learning:
+
+1.:heavy_check_mark:  **K-Means algorithm:** The k-means algorithm is one of the most popular clustering
+algorithms. It classifies the dataset by dividing the samples into different clusters of equal
+variances. The number of clusters must be specified in this algorithm. It is fast with fewer
+computations required, with the linear complexity of O(n).
+
+2.:heavy_check_mark: **Mean-shift algorithm:** Mean-shift algorithm tries to find the dense areas in the smooth density of data points.
+It is an example of a centroid-based model, that works on updating the candidates for centroid to be the center of the
+points within a given region
+
+3.:heavy_check_mark: **DBSCAN Algorithm:** It stands for Density-Based Spatial Clustering of Applications
+with Noise. It is an example of a density-based model similar to the mean-shift, but with
+some remarkable advantages. In this algorithm, the areas of high density are separated by
+the areas of low density. Because of this, the clusters can be found in any arbitrary shape.
+
+4.:heavy_check_mark: **Expectation-Maximization Clustering using GMM:** This algorithm can be used as an alternative for the 
+k-means algorithm or for those cases where K-means can be failed. In GMM, it is assumed that the data points are Gaussian distributed.
+
+5.:heavy_check_mark: **Agglomerative Hierarchical algorithm:** The Agglomerative hierarchical algorithm performs the bottom-up hierarchical clustering. 
+In this, each data point is treated as a single cluster at the outset and then successively merged. The cluster hierarchy can be represented as a tree-structure.
+
+6.:heavy_check_mark:  **Affinity Propagation:** It is different from other clustering algorithms as it does not require to specify the number of clusters.
+In this, each data point sends a message between the pair of data points until convergence. It has O(N2T) time complexity, which is the main drawback of this algorithm.
+
+#### Applications of Clustering ####
+
+**In Identification of Cancer Cells** The clustering algorithms are widely used for the
+identification of cancerous cells. It divides the cancerous and non-cancerous data sets into
+different groups.
+
+**In Search Engines:** Search engines also work on the clustering technique. The search
+result appears based on the closest object to the search query. It does it by grouping
+similar data objects in one group that is far from the other dissimilar objects. The accurate
+result of a query depends on the quality of the clustering algorithm used.
+
+**Customer Segmentation:** It is used in market research to segment the customers based
+on their choice and preferences
+
+**In Biology:** It is used in the biology stream to classify different species of plants and
+animals using the image recognition technique.
+
+
+## Support Vector Machine ## 
 
 SVM is a powerful supervised algorithm that works best on smaller datasets but on complex ones. Support
 Vector Machine, abbreviated as SVM can be used for both **regression** and **classification** tasks, but
@@ -9,7 +126,7 @@ It is a supervised machine learning problem where we try to find a hyperplane th
 **Note**: Don’t get confused between SVM and logistic regression. Both the algorithms try to find the best hyperplane, but the
 main difference is logistic regression is a probabilistic approach whereas support vector machine is based on statistical approaches.
 
-### Types of Support Vector Machine :white_heart: ###
+### Types of Support Vector Machine ###
 
 #### Linear SVM ####
 When the data is perfectly linearly separable only then we can use Linear SVM. Perfectly linearly
