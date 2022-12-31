@@ -24,6 +24,8 @@ deals with the unlabeled dataset.
 After applying this clustering technique, each cluster or group is provided with a cluster-ID. 
 ML system can use this id to simplify the processing of large and complex datasets.
 
+![clustering](https://github.com/NurFortuna/Data-Mining/blob/main/pic/clustering1.PNG)
+
 #### Types of Clustering Methods ####
 
 The clustering methods are broadly divided into Hard clustering (datapoint belongs to only one group) and
@@ -48,6 +50,8 @@ In this type, the dataset is divided into a set of k groups, where K is used to 
 pre-defined groups. The cluster center is created in such a way that the distance between the data
 points of one cluster is minimum as compared to another cluster centroid.
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/clustering2.PNG)
+
 #### Density-Based Clustering :ribbon: ####
 
 The density-based clustering method connects the highly-dense areas into clusters, and the
@@ -58,6 +62,8 @@ densities into clusters. The dense areas in data space are divided from each oth
 These algorithms can face difficulty in clustering the data points if the dataset has varying
 densities and high dimensions.
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/clustering3.PNG)
+
 #### Distribution Model-Based Clustering :ribbon: ####
 
 In the distribution model-based clustering method, the data is divided based on the probability
@@ -66,9 +72,13 @@ of how a dataset belongs to a particular distribution. The grouping is done by a
 The example of this type is the Expectation-Maximization Clustering algorithm that uses
 Gaussian Mixture Models (GMM).
 
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/clusterin4.PNG)
+
 #### Hierarchical Clustering :ribbon: ####
 
 Hierarchical clustering can be used as an alternative for the partitioned clustering as there is no requirement of pre-specifying the number of clusters to be created. In this technique, the dataset is divided into clusters to create a tree-like structure, which is also called a dendrogram. The observations or any number of clusters can be selected by cutting the tree at the correct level. The most common example of this method is the Agglomerative Hierarchical algorithm.
+
+![resim](https://github.com/NurFortuna/Data-Mining/blob/main/pic/clusterin6.PNG)
 
 #### Clustering Algorithms ####
 
